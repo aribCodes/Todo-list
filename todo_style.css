@@ -1,0 +1,152 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(243, 217, 188);
+}
+#user_div{
+    width: 99%;
+    display: flex;
+}
+#div1{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    padding-left: 2%;
+}
+#div1 img{
+    height: 25px;
+    width: 25px;
+}
+#user{
+    margin-left: 1%;
+}
+#div2{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#logout_btn{
+    border: none;
+    background-color: rgb(243, 217, 188);
+    cursor: pointer;
+}
+#logout_btn img{
+    width: 20px;
+    height: 20px;
+}
+#logout_btn img:hover{
+    width: 22px;
+    height: 22px;
+}
+#todoList{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    top: 5vh;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 1% 4% 4% 4%;
+    border-radius: 10px;
+}
+#heading{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+}
+#head{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid rgb(243, 217, 188);
+    overflow: hidden;
+}
+#task{
+    width: 70%;
+    padding: 2%;
+    border: none;
+    font-size: medium;
+    outline: none;
+}
+#add_btn{
+    width: 30%;
+    padding: 2%;
+    background-color: rgb(243, 217, 188);
+    font-size: large;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+#usertodos{
+    /* color: blue; */
+    background-color: rgb(243, 217, 188);
+    font-size: large;
+    padding: 20px;
+    font-weight: bold;
+    border-bottom: 4px solid white;
+    border-radius: 5px;
+}
+#usertodos:hover{
+    color: rgb(255, 112, 112);
+    text-decoration: underline;
+}
+#add{
+    width: 100%;
+    height: 58%;
+    overflow-y: scroll;
+    text-align: left;
+    box-sizing: border-box;
+}
+#default{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+#usertodos button{
+    float: right;
+    background-color: rgb(243, 217, 188);
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+}
+#usertodos button:hover{
+    color: red;
+}
+#remove{
+    height: 10%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+#remove_all_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh;
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(243, 217, 188);
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(219, 178, 131);
+    border-right: 2px solid rgb(219, 178, 131);
+    margin-top: 1%;
+    cursor: pointer;
+}
+#remove_all_btn:hover{
+    color: rgb(219, 178, 131);
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 8px 3px rgb(243, 217, 188);
+    box-sizing: border-box;
+}

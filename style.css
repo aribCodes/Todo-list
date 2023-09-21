@@ -1,0 +1,147 @@
+body{
+    /* background-color: rgb(243, 217, 188);*/
+    height: 100vh;
+    background-image: url(bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.SignupF{
+    background-color: white;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    width: 90%;
+    padding-bottom: 20px;
+}
+.loginF{
+    background-color: white;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    width: 90%;
+    padding-bottom: 20px;
+}
+#userName, #userEmail, #userPass, #userEmail2{
+    margin-bottom: 22px;
+    width: 80%;
+    border-style: none;
+    border-bottom: 2px solid rgb(243, 217, 188);
+    padding: 1%;
+    font-size: medium;
+}
+#confirmPass, #userPass2{
+    width: 80%;
+    margin-bottom: 10px;
+    border-style: none;
+    border-bottom: 2px solid rgb(243, 217, 188);
+    padding: 1%;
+    font-size: medium;
+}
+input:focus {
+    outline-style: groove;
+    outline-color: rgba(224, 196, 163, 0.938);
+}
+#error, #error2{
+    font-size: small;
+    color: red;
+}
+#submit_btn, #submit_btn2{
+    background-color: rgb(243, 217, 188);
+    border: rgb(21, 169, 255);
+    border-radius: 5px;
+    padding: 3%;
+    width: 82%;
+    color: rgb(56, 56, 56);
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+}
+#submit_btn:hover, #submit_btn2:hover{
+    box-shadow: 2px 2px 8px 4px rgb(243, 217, 188);
+    background-color: white;
+    color: rgb(219, 178, 131);
+    box-sizing: border-box;
+}
+#alreadyLogin{
+    font-size:medium;
+    margin-bottom: 10px;
+    width: 80%;
+}
+#alreadyLogin span{
+    color: rgb(184, 145, 100);
+    cursor: pointer;
+}
+#alreadyLogin span:hover{
+    text-decoration: underline;
+}
+@media only screen and (min-width: 475px) {
+    .SignupF{
+        width: 70%;
+    }     
+    .loginF{
+        width: 70%;
+    }   
+}
+@media only screen and (min-width: 585px) {
+/* For mobile phones: */
+    .SignupF{
+        width: 60%;
+    }     
+    .loginF{
+        width: 60%;
+    }   
+}
+@media only screen and (min-width: 727px) {
+/* For mobile phones: */
+    .SignupF{
+        width: 50%;
+    }     
+    .loginF{
+        width: 50%;
+    }   
+}
+@media only screen and (min-width: 840px) {
+/* For mobile phones: */
+    .SignupF{
+        width: 40%;
+    }    
+    .loginF{
+        width: 40%;
+    }  
+}
+@media only screen and (min-width: 900px) {
+    .SignupF{
+        width: 35%;
+    }     
+    .loginF{
+        width: 35%;
+    }     
+}
+@media only screen and (min-width: 1200px) {
+/* For mobile phones: */
+    .SignupF{
+        width: 33%;
+    }    
+    .loginF{
+        width: 33%;
+    }  
+}

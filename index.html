@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <!-- sign up form -->
+    <div id="Signup" class="SignupF">
+        <h2>Sign Up</h2>
+        <hr>
+        <form action="todo.html" id="signupForm" onsubmit="return validate()">
+            <input type="text" name="userName" id="userName" placeholder="Enter your name">
+            <input type="email" name="userEmail" id="userEmail" placeholder="Enter your email" >
+            <input type="password" name="userPass" id="userPass" placeholder="Create a password" >
+            <input type="password" name="confirmPass" id="confirmPass" placeholder="Confirm password" >
+            <br>
+            <p id="error"></p>
+            <input type="submit" name="submit_btn" id="submit_btn">
+            <br>
+        </form>
+        <p id="alreadyLogin">Already have an account? <span onclick="hideSignup()">login</span></p>
+    </div>
+    <!-- login form -->
+    <div id="login" class="loginF">
+        <h2>Login</h2>
+        <hr>
+        <form action="todo.html" id="loginForm" onsubmit="return verification()">
+            <input type="email" name="userEmail2" id="userEmail2" placeholder="Enter your email">
+            <input type="password" name="userPass2" id="userPass2" placeholder="Enter your password">
+            <br>
+            <p id="error2"></p>
+            <input type="submit" name="submit_btn2" id="submit_btn2" value="Login">
+            <br>         
+        </form>
+        <p id="alreadyLogin">Dont have an account? <span onclick="hideLogin()">Signup now</span></p>
+    </div>   
+
+    <script src="form.js"></script>
+</body>
+</html>

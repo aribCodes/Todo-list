@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="todo_style.css">
+</head>
+<body>
+
+    <!-- user name and signout button -->
+    <div id="user_div">
+        <div id="div1">
+            <img src="loginicon.png" alt="login-icon">
+            <h3 id="user"></h3>
+        </div>
+        <div id="div2">
+            <button id="logout_btn" onclick="signOut()"><img src="signouticon.png" alt=""></button>
+        </div>
+    </div>
+    
+    <!-- Todo list -->
+    <div id="todoList">
+        <div id="heading">
+            <h2>To-Do List</h2>
+        </div>
+        <div id="head">
+            <input id="task" type="text" placeholder="Add your tasks here">
+            <button id="add_btn" onclick="addtask()">Add Item</button>
+        </div>
+        <div id="add">
+            <p id="default">Add Tasks</p>
+        </div>
+        <div id="remove">
+            <button id="remove_all_btn" onclick="removeAll()">Clear All</button>
+        </div>
+    </div>
+    
+    <script src="todo_script.js"></script>
+</body>
+</html>
